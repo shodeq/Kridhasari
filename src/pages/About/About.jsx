@@ -14,7 +14,7 @@ const About = () => {
             <HeaderBar />
             <Header />
             <Breadcrumbs
-                title="Kridha Sari" />
+                title="Kridhasari" />
             <div className='py-32'>
                 <AboutSectionOne />
             </div>

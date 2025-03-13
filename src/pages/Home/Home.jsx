@@ -23,10 +23,10 @@ const Home = () => {
             <Leatest />
             <Unique /> 
             <ShopexOffer />
-            <Discount />
-            <Newslater />
-            <Brands />
-            <LeatestBlog />
+            {/* <Discount /> */}
+            {/* <Newslater /> */}
+            {/* <Brands /> */}
+            {/* <LeatestBlog /> */}
             <Footer />
         </div>
     )

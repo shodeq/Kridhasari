@@ -72,7 +72,7 @@ export const convertCurrency = (amount, options = {}) => {
           ? value.toFixed(decimalDigits)
           : Math.round(value).toString();
         // Add thousand separators
-        formattedNumber = formattedNumber.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        formattedNumber = formattedNumber.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
       }
   
       // Add currency symbol if requested

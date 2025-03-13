@@ -1,5 +1,5 @@
 import React from 'react'
-import OfferCard from '../../../components/OfferCard/OfferCard'
+import OfferCardCourier from '../../../components/OfferCard/OfferCardCourier'
 import { courierOptions } from '../../../redux/curierOption'
 
 const ShopexOffer = () => {
@@ -11,7 +11,7 @@ const ShopexOffer = () => {
                 </h2>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
                     {courierOptions.map((courier, index) => (
-                        <OfferCard 
+                        <OfferCardCourier 
                             key={index} 
                             courier={courier} 
                         />

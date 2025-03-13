@@ -35,10 +35,6 @@ const LeatesProductCard = (props) => {
         <div className='w-full bg-white rounded-xl overflow-hidden shadow-lg group hover:-translate-y-1 transition-all duration-300'>
             {/* Main Content Container */}
             <div className='relative bg-gradient-to-br from-gray-50 to-white p-6'>
-                {/* Sale Badge */}
-                <div className='absolute -right-2 -top-2 bg-indigo-600 text-white px-4 py-1 transform rotate-6 z-10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                    Sale!
-                </div>
 
                 {/* Category Tag */}
                 <span className='absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm text-indigo-600 text-xs font-medium rounded-full'>
@@ -67,12 +63,6 @@ const LeatesProductCard = (props) => {
                         >
                             <IoMdHeartEmpty className='w-5 h-5 text-indigo-600' />
                         </button>
-                        <Link 
-                            to={`/product-details/${props.leatesData.id}`}
-                            className='bg-white p-3 rounded-full shadow-lg hover:bg-gray-50 transform hover:scale-110 transition-all duration-300'
-                        >
-                            <IoMdSearch className='w-5 h-5 text-indigo-600' />
-                        </Link>
                     </div>
                 </div>
             </div>

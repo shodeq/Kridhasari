@@ -1,25 +1,19 @@
 import React from 'react'
 
-const OfferCard = ({ courier }) => {
-    return (
-        <div className='w-full shadow border-b-2 border-transparent hover:border-b-2 hover:border-my-orange transition-all duration-300'>
-            <div className='p-10 text-center flex flex-col justify-between items-center'>
-                <img src={courier.logo} className='w-[65px] h-[65px] object-contain' alt={courier.name} />
-                <h2 className='fnt text-textBlue text-xl font-semibold py-4'>{courier.name}</h2>
-                <p className='font-bold text-base text-[#BAB6CE]'>{courier.description}</p>
-                <div className='mt-4 space-y-2'>
-                    <div className='text-sm text-gray-600'>
-                        <span className='font-semibold'>Estimasi: </span>
-                        {courier.estimatedTime}
-                    </div>
-                    <div className='text-sm text-gray-600'>
-                        <span className='font-semibold'>Layanan: </span>
-                        {courier.services.join(', ')}
-                    </div>
-                </div>
-            </div>
+const OfferCard = ({ kridhasari }) => {
+  return (
+    <div className='bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 h-full flex flex-col'>
+      <div className='flex justify-center mb-4'>
+        <div className='w-16 h-16 rounded-full bg-[#EEEFFB] flex items-center justify-center'>
+          <img src={kridhasari.img} alt={kridhasari.title} className='w-10 h-10 object-contain' />
         </div>
-    )
+      </div>
+      
+      <h3 className='text-xl font-semibold text-[#151875] text-center mb-3'>{kridhasari.title}</h3>
+      
+      <p className='text-gray-600 text-center flex-grow'>{kridhasari.desc}</p>
+    </div>
+  )
 }
 
 export default OfferCard

@@ -124,7 +124,7 @@ const FeaturedProductCard = (props) => {
                 {/* Top Action Bar */}
                 <div className="absolute top-0 left-0 right-0 p-4 flex justify-between z-10">
                     {/* Category Tag */}
-                    <span className="px-4 py-1.5 bg-white/80 backdrop-blur-sm text-indigo-600 text-sm font-medium rounded-full">
+                    <span className="px-4 py-1.5 bg-white/80 backdrop-blur-sm text-indigo-600 text-sm font-medium rounded-full flex items-center justify-center">
                         {props.allProduct.category}
                     </span>
                     
@@ -162,7 +162,7 @@ const FeaturedProductCard = (props) => {
                                 Add to Cart
                             </button>
                             <Button
-                                className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-lg font-medium transition-all duration-300"
+                                className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-lg font-medium transition-all duration-300 flex items-center justify-center"
                                 title="View Details"
                                 link={`/product-details/${props.allProduct.id}`}
                             />
